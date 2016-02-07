@@ -1,0 +1,88 @@
+.container {
+   width:1024px;
+   margin-left: auto;
+   margin-right: auto; /* this auto right and left puts this container in the middle*/
+   min-height:380px;   
+}
+
+#panel {
+   width:100%;
+   background-color: rgb(180,180,180); /*Grey*/
+   min-height:1000px;
+   color:white; /*Text color*/
+   font-weight: bold;
+   padding:5px;
+   font-family: Arial;
+   
+}
+
+.grid-container {
+   float: left;
+   width:210px;
+   height:250px;
+   text-align: center;
+   width:50%;
+}
+
+.grid-container h2 {
+   font-family: Arial;
+ }
+
+
+.grid { /* This selector will work on any elemt with class name "grid xxx" */
+   background-color: rgb(248,248,248); /*light Grey*/
+   border: solid 5px rgb(249, 90, 0); /*RED*/
+   width:210px;
+   height:210px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 3px;
+   box-shadow: 5px 5px #d8d8d8, 5px 5px #d8d8d8;
+   overflow: auto;
+}
+
+.row {
+   height:33.3%;
+}
+
+.cell {
+   width:32.3%;
+   height:100%;
+   float: left;
+   text-align: center;
+   font-size:150%;
+   font-family: Arial;
+   font-weight: bold;
+   position:relative;
+}
+
+.cell:hover {
+   background-color: rgb(221,221,221);
+}
+
+.cell span {
+   display: block;
+   transform: translateY(70%);
+}
+
+button {
+    text-align: center;
+    font-size:100%;
+    background-color: rgb(148,196,212); 
+}
+
+.click_area {
+   width:210px;
+   height:80px;
+
+   margin-left: auto;
+   margin-right: auto;
+   
+   overflow: auto;
+}
+
+.half_row {
+width:50%;
+float: left;
+margin:0px;
+}
