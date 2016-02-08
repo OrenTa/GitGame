@@ -3,13 +3,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    <link href="css/styles.css" rel="stylesheet" media="screen" type="text/css">
+   <link href="css/hover.css" rel="stylesheet" media="screen" type="text/css">
    <title>Sliding Tiles Puzzle</title>
 </head>
 
 <body>
  <div class="container">
   <div class="grid-container">
-    <h2> Initial Config </h2>
+  <h2> Initial Config </h2>
 	<div class="grid start"> <!-- This is styled by the selector grid -->
       <div class="row"> 
          <div class="cell" data-pos="0,0"><span>6</span></div>
@@ -26,18 +27,18 @@
          <div class="cell" data-pos="2,1"><span>2</span></div>
          <div class="cell" data-pos="2,2"><span>1</span></div>
       </div>
-   	</div>
+  </div> <!-- end of grid start -->
    	
-   	<div class="click_area">
+  <div class="click_area">
    		<div class="row"></div>
    		<div class="row">
    			<button class="half_row" onclick="start()"> Solve </button>
-			<button class="half_row" onclick="showSolution()"> Show Step </button>
-		</div>
-		<div class="row"></div>
+			  <button class="half_row" onclick="showSolution()"> Show Step </button>
+	    </div>
+	    <div class="row"></div>
 	</div>
 	
-  </div>
+  </div> <!-- end of grid container -->
 
   <div class="grid-container">
    <h2> Goal Config </h2>
@@ -58,13 +59,15 @@
          <div class="cell"></div>
       </div>
    </div>
+  </div> <!-- end of grid container (the second) -->
+
 </div>
- </div>
 
 
  <div id="panel">
 
  </div>
+
 
       <script type="text/javascript" src="js/jquery.js"></script>
       <!-- <script type="text/javascript" src="js/priority-queue.js"></script> 
